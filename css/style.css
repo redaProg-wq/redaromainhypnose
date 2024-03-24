@@ -1,0 +1,519 @@
+/*Reset*/ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+/* reset */
+
+:root{
+    font-family: "Mukta", sans-serif;
+}
+
+
+/* general */
+
+.div-container {
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+body{
+    overflow-x: hidden;
+}
+
+.dancing {
+    font-family: "Dancing Script", cursive;
+}
+
+.yellow{
+    color: #9acd32;
+}
+.underlineyellow{
+    text-decoration: underline 2px #9acd32;
+}
+
+
+/* tools links */
+
+.boutonA {
+    text-decoration: none;
+    border: 2px solid #9acd32;
+    border-radius: 15px;
+    color: transparent;
+    padding: 40px 80px;
+    font-size: 2rem;
+    font-family: "Mukta" , sans-serif;
+    letter-spacing: 0.3rem;
+    transition: all 0.5s;
+    position: relative;
+  }
+  .boutonA:before {
+    content: "Découvrir les services";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9acd32;
+    background:black;
+    font-size: 2rem;
+    top: 0;
+    left: 100%;
+    font-family: "Mukta", sans-serif;
+    letter-spacing: 0.3rem;
+    transition: all 1s;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: scale(0) rotatey(0);
+    opacity: 0;
+  }
+  .boutonA:hover:before {
+    transform: scale(1) rotatey(360deg);
+    left: 0;
+    opacity: 1;
+  }
+  .boutonA:after {
+    content: "Découvrir les services";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9acd32;
+    background: black;
+    font-size: 2rem;
+    top: 0;
+    left: 0;
+    font-family: sans-serif;
+    letter-spacing: 0.3rem;
+    transition: all 1s;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: scale(1) rotatey(0);
+    opacity: 1;
+  }
+  a:hover:after {
+    transform: scale(0) rotatey(360deg);
+    left: -100%;
+    opacity: 0;
+  }
+  
+
+/*header-valueP*/
+
+.header-valueP{
+    height: 100vh;
+}
+
+
+
+/* Modal and burger menu */
+
+.modal-mobile{
+    background-color: white;
+    z-index: 998;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    top: -100vh;
+    transition: 0.9s;
+    
+}
+
+.change-modal-mobile{
+    top: 0vh;
+    position: fixed;
+    transition: 0.9s;
+    
+}
+
+
+
+.modal-navbar{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    
+
+}
+
+.modal-navbar li{
+    list-style: none;
+    
+}
+
+.modal-navbar li a {
+
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    border-bottom:  solid 2px white;
+
+}
+
+.modal-navbar li a:hover {
+   border-bottom: solid 2px #9acd32;
+}
+
+.icon-menu{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    position: fixed;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    z-index: 999;
+    
+}
+.icon-menu :hover{
+    cursor: pointer;
+
+}
+
+.icon-menu i {
+    font-size: 2rem;
+   
+
+}
+.rotate{
+    transform: rotate(90deg);
+}
+
+/*valueP*/
+
+.valueP {
+    height: 100vh; /* Hauteur de la div */
+    width: 100vw;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../assets/img/white.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.valueP-container{
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.valueP-container h2 {
+    color: black;
+    font-size: 4rem;
+    text-align: center;
+    rotate: -10deg;
+}
+
+
+ /*presentations*/
+.presentations {
+    min-height: 400px;
+    background-color: white;
+  
+    
+}
+
+.presentations-container p{
+    margin-top: 2rem;
+    margin: 5px;
+    width: 65vw;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 2rem;
+}
+
+/*separator */
+
+.separator {
+    min-height:500px;
+    background-color: black;
+   overflow-x: hidden;
+    
+}
+
+.container-separator{
+   width: 75vw;
+   height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+
+.container-separator p{
+    color:white;
+    text-align: center;
+    font-size: 3rem;
+    rotate: -5deg;
+
+}
+
+.button-separator {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    max-width: 90vw;
+    box-sizing: border-box;
+    
+}
+
+.button-yellow-separator{
+    margin: 2rem;
+    width: 300px;
+    height: 100px;
+}
+
+.button-yellow-separator a {
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.button-yellow-separator a:hover{
+   color:black;
+}
+
+
+/* Reda */
+
+.reda {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.reda-container{
+    max-width: 75vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+   
+   
+
+}
+
+.redaImageTexte {
+    max-width: 75vw;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 7fr 1fr;
+   grid-template-rows: 120px 120px 120px 120px 120px 120px;
+   align-items: center;
+   justify-content: center;
+    
+}
+
+
+
+
+
+
+.redaImage{
+   grid-column-start: 3;
+   grid-row-start: 3;
+    width: 20vw;
+   
+
+}
+
+.redaImage img{
+    max-width: 100%;
+    border-radius: 50%;
+    
+   
+}
+
+.redaTexte{
+    max-width: 50vw;
+    box-sizing: border-box;
+     grid-column-start: 5;
+    grid-column-end: 7;
+     grid-row-start: 4;
+    margin-left: 4rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.03rem;
+    line-height: 2rem;
+   
+}
+
+.redaTexteMobile{
+    display: none;
+}
+
+
+/* Reda Services */
+
+.redaServices{
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redaServicesimg{
+    display: flex;
+    width: 75vw;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+
+.redaServicesimg img{
+
+    margin-top: 5rem;
+  max-width: 20vw;
+
+}
+.redaServicesContainer h2{
+    color: black;
+    margin-top: 4rem ;
+    font-size: 3rem;
+    text-align: center;
+    
+}
+
+.redaServicesContainer p{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.03rem;
+}
+
+
+/* footer */
+footer{
+    margin-top: 5rem;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 100%;
+}
+
+
+
+footer p{
+    grid-column-start: 2;
+    color: white;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px #9acd32;
+}
+
+
+    
+
+
+
+
+
+/*Media queries*/
+
+@media screen and (max-width:800px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        display: none;
+    }
+
+
+    .valueP {
+    background-size: cover;
+    background-position: center right; /* Centrer l'image horizontalement et verticalement */
+
+    }
+
+    .valueP h2{
+        padding-bottom: 6rem;
+    }
+
+    .solution-container {
+       justify-content: flex-start;
+    }
+
+    .presentations-container p {
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+    .button-separator{
+        flex-direction: column;
+    }
+    .button-yellow-separator{
+        margin: 2rem 2rem 4rem 2rem;
+    }
+
+    .redaImageTexte{
+        max-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .redaImage{
+        margin-top: 3rem;
+        width:40vw;
+    }
+
+    .redaTexte{
+       display: none;
+    }
+
+    .redaTexteMobile{
+        display: inline;
+        text-align: center;
+        margin-top: 4rem;
+        font-size: 1.8rem;
+        width: 75vw;
+    }
+    footer p{
+        width: 80vw;
+        margin-bottom: 1rem;
+    }
+}
+    @media screen and (min-width:801px) {
+
+  
+    }
+    
+
