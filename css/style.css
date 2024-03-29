@@ -41,6 +41,9 @@ body{
     text-decoration: underline 2px #9acd32;
 }
 
+.center {
+    text-align: center;
+}
 
 /* tools links */
 
@@ -205,7 +208,7 @@ body{
 .valueP {
     height: 100vh; /* Hauteur de la div */
     width: 100vw;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../assets/img/white.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6)), url('../assets/img/white.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -234,8 +237,19 @@ body{
 .presentations {
     min-height: 400px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   
     
+}
+.presentations-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90vw;
 }
 
 .presentations-container p{
@@ -246,6 +260,15 @@ body{
     line-height: 2rem;
     letter-spacing: 0.05rem;
     margin-bottom: 2rem;
+}
+
+.p2resentations{
+    text-align: center;
+
+}
+
+.p2presentations i {
+    margin-right: 1rem;
 }
 
 /*separator */
@@ -331,7 +354,7 @@ body{
 .redaImageTexte {
     max-width: 75vw;
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr 7fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 7fr 1fr 1fr;
    grid-template-rows: 120px 120px 120px 120px 120px 120px;
    align-items: center;
    justify-content: center;
@@ -345,6 +368,7 @@ body{
 
 .redaImage{
    grid-column-start: 3;
+   
    grid-row-start: 3;
     width: 20vw;
    
@@ -363,6 +387,7 @@ body{
     box-sizing: border-box;
      grid-column-start: 5;
     grid-column-end: 7;
+    
      grid-row-start: 4;
     margin-left: 4rem;
     font-size: 1.2rem;
@@ -440,10 +465,106 @@ footer a {
 }
 
 
+/*Page Servives */
+/*Page Servives */
+/*Page Servives */
+
+.pageServicesPresentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageServicesPresentationContainer{
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pageServicesPresentationContainer h2{
+    transform: rotate(-5deg);
+    font-size: 3rem;
+    margin-top: 4rem;
+}
     
 
+.pageServicesPresentationContainer p {
+    margin-top: 4rem;
+    font-size: 1.2rem;
+}
 
+/* Services developpement Div */
+.servicesDeveloppement{
+    margin-top: 4rem;
+    background-color: black;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.servicesDeveloppementContainer{
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicesDeveloppementContainer h2{
+    margin: 3rem;
+    color: white;
+    font-size: 2.2rem;
+    transform: rotate(-5deg);
+
+}
+
+.servicesDeveloppementContainer p {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sophrologie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.sophrologieContainer{
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sophrologieContainer h2{
+    margin: 2rem 0 2rem 0;
+    font-size: 3rem;
+    transform: rotate(-5deg);
+}
+
+.sophrologieImage{
+    max-width: 75vw;
+}
+
+.sophrologieImage img{
+    width: 100%;
+}
+
+.sophrologieContainer p {
+    font-size: 1.2rem;
+}
 
 
 /*Media queries*/
@@ -509,6 +630,19 @@ footer a {
     footer p{
         width: 80vw;
         margin-bottom: 1rem;
+    }
+
+    /* page services */
+
+    .pageServicesPresentationContainer p{
+        font-size: 2rem;
+    }
+
+    .servicesDeveloppementContainer p {
+        font-size: 2rem;
+    }
+    .sophrologieContainer p{
+        font-size: 2rem;
     }
 }
     @media screen and (min-width:801px) {
