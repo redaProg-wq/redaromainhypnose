@@ -594,7 +594,7 @@ footer a {
     }
 
     .presentations-container p {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         line-height: 3rem;
     }
 
@@ -625,26 +625,26 @@ footer a {
         display: inline;
         
         margin-top: 4rem;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         width: 75vw;
     }
     footer p{
         width: 80vw;
         margin-bottom: 1rem;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     /* page services */
 
     .pageServicesPresentationContainer p{
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     .servicesDeveloppementContainer p {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
     .sophrologieContainer p{
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 }
     @media screen and (min-width:801px) {
