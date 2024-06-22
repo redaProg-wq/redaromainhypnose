@@ -35,10 +35,10 @@ body{
 }
 
 .yellow{
-    color: #9acd32;
+    color: #EE5A24;
 }
 .underlineyellow{
-    text-decoration: underline 2px #9acd32;
+    text-decoration: underline 2px #EE5A24;
 }
 
 .left {
@@ -49,10 +49,10 @@ body{
 
 .boutonA {
     text-decoration: none;
-    border: 2px solid #9acd32;
+    border: 2px solid #EE5A24;
     border-radius: 15px;
     color: transparent;
-    padding: 40px 80px;
+    padding: 20px 40px;
     font-size: 2rem;
     font-family: "Mukta" , sans-serif;
     letter-spacing: 0.3rem;
@@ -64,7 +64,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #9acd32;
+    color: #EE5A24;
     background:black;
     font-size: 2rem;
     top: 0;
@@ -88,7 +88,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #9acd32;
+    color: #EE5A24;
     background: black;
     font-size: 2rem;
     top: 0;
@@ -171,7 +171,7 @@ body{
 }
 
 .modal-navbar li a:hover {
-   border-bottom: solid 2px #9acd32;
+   border-bottom: solid 2px#EE5A24;
 }
 
 .icon-menu{
@@ -208,13 +208,40 @@ body{
 .valueP {
     height: 100vh; /* Hauteur de la div */
     width: 100vw;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6)), url('../assets/img/white.jpg');
-    background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url('../assets/img/white.jpg');
+    background-size:  cover;
     background-position: center;
+ 
     display: flex;
     justify-content: center;
     align-items: center;
     
+}
+
+.valuePServices{
+    height: 100vh; /* Hauteur de la div */
+    width: 100vw;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6)), url('../assets/img/your_ideas.jpg');
+    background-repeat: no-repeat;
+    background-size:    cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.valuePTemoignages{
+    height: 100vh; /* Hauteur de la div */
+    width: 100vw;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6)), url('../assets/img/temoignages.jpg');
+    background-repeat: no-repeat;
+    background-size:    cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .valueP-container{
@@ -488,7 +515,7 @@ footer a {
 
 .pageServicesPresentationContainer h2{
     transform: rotate(-5deg);
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin-top: 4rem;
 }
     
@@ -518,7 +545,7 @@ footer a {
 }
 
 .servicesDeveloppementContainer h2{
-    margin: 3rem;
+    margin: 2.2rem;
     color: white;
     font-size: 2.2rem;
     transform: rotate(-5deg);
@@ -551,7 +578,7 @@ footer a {
 
 .sophrologieContainer h2{
     margin: 2rem 0 2rem 0;
-    font-size: 3rem;
+    font-size: 2.2rem;
     transform: rotate(-5deg);
 }
 
@@ -566,6 +593,81 @@ footer a {
 .sophrologieContainer p {
     font-size: 1rem;
 }
+
+
+/*pages temoignages */
+.temoignages {
+    min-height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    
+}
+.temoigngages-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90vw;
+}
+
+.temoignages-container p{
+    padding-top: 2rem;
+    margin: 5px;
+    width: 65vw;
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 2rem;
+}
+
+.temoignagesUnitaires{
+    min-height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.temoignagesUnitaireContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 90vw;
+}
+
+.tem{
+    padding-top: 5rem;
+    margin: 5px;
+    width: 65vw;
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 2rem;
+}
+
+.temP{
+   width: 100%;
+}
+.temSignature{
+    font-weight: bold;
+}
+
+.separator2{
+ margin: 2px auto 2px auto;
+   width: 80%;
+   height: 2px;
+    background-color: #EE5A24;
+}
+
+
+/*page blog */
 
 
 /*Media queries*/
@@ -646,6 +748,18 @@ footer a {
     .sophrologieContainer p{
         font-size: 1.2rem;
     }
+
+    /*page témoignages */
+    .temoignages-container p{
+        font-size: 1.2rem;
+    }
+
+    .temP{
+        font-size: 1.2rem;
+     }
+     .temSignature{
+         font-size: 1.2rem;
+     }
 }
     @media screen and (min-width:801px) {
 
